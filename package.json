@@ -1,0 +1,11 @@
+{
+  "name": "gglfit",
+  "version": "1.0.0",
+  "description": "AppScript functions to transfer Fitness-Data to sheets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Herbert Sablotny",
+  "license": "ISC"
+}
