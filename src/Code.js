@@ -21,11 +21,14 @@ function getHistory() {
 }
 
 function getSleepData() {
-  getSleepDataForDays(1,1, 'SleepData');
+  //getSleepDataForDays(1,1, 'SleepData');
+  getSleepDataNG(1,1,'SleepData');
+
 }
 
 function getSleepHistory() {
-  getSleepDataForDays(1,60,'SleepHistory');
+  //getSleepDataForDays(1,60,'SleepHistory');
+  getSleepDataNG(1,60,'SleepHistory');
 }
 
 // see step count example at https://developers.google.com/fit/scenarios/read-daily-step-total
@@ -126,7 +129,7 @@ function getFitService() {
 
       // Set the scopes to request (space-separated for Google services).
       // see https://developers.google.com/fit/rest/v1/authorization for a list of Google Fit scopes
-      .setScope('https://www.googleapis.com/auth/fitness.activity.read https://www.googleapis.com/auth/fitness.body.read https://www.googleapis.com/auth/fitness.location.read')
+      .setScope('https://www.googleapis.com/auth/fitness.activity.read https://www.googleapis.com/auth/fitness.body.read https://www.googleapis.com/auth/fitness.location.read https://www.googleapis.com/auth/fitness.sleep.read')
 
       // Below are Google-specific OAuth2 parameters.
 

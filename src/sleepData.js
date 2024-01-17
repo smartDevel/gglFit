@@ -8,6 +8,15 @@ function getSleepDataForDays(fromDaysAgo, toDaysAgo, tabName) {
     end.setDate(end.getDate() - fromDaysAgo);
     
     var fitService = getFitService();
+/*
+    var response2 = UrlFetchApp.fetch('https://www.googleapis.com/fitness/v1/users/me/sessions?startTime=2023-03-05T00:00.000Z&endTime=2023-03-05T23:59:59.999Z&activityType=72', {
+            headers: {
+                Authorization: 'Bearer ' + fitService.getAccessToken()
+              },
+              'method' : 'GET',
+              'contentType' : 'application/json',
+              'payload' : JSON.stringify(request, null, 2)
+            });              */
     
     var request = {
       "aggregateBy": [
